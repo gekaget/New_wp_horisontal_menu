@@ -2961,14 +2961,94 @@ body {
 @media only screen and (max-height: 700px) {
   /* Begining of INDEX Page */ }
 
-/* ==========  Desktop First Method  ========= */
-@media only screen and (max-width: 1850px) {
-  /* Begining of INDEX Page */ }
+/*====================*/
+/* Begin of Site Mine MENU */
+.site-nav {
+  padding: 0 10px; }
 
-@media only screen and (max-width: 1780px) {
-  /* Begining of INDEX Page */
-  /* Ending of INDEX Page */ }
+.menu {
+  display: flex;
+  justify-content: space-between; }
 
+.menu-item {
+  position: relative;
+  z-index: 1; }
+
+.menu-item > a {
+  padding: 5px 20px;
+  background-color: #ededed;
+  display: block; }
+
+.menu-item:hover .sub-menu {
+  transform: translate(0, 0); }
+
+/*====================*/
+/* This styles for fullscreen width sub-menu items */
+/* .header {
+		position: relative;
+		z-index: 1;
+	}
+	.header-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: stratch;
+	}
+	.site-nav {
+		width: 50%;	
+	}
+	.menu {
+		height: 100%;
+	}
+	.menu-item {
+		position: static;
+		height: 100%;
+	}
+	.menu-item > a {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.menu-item:hover .sub-menu {
+		max-height: 200px;
+	} */
+/* This styles for fullscreen width sub-menu items */
+/*====================*/
+/* End of Site Mine MENU */
+/*====================*/
+/*====================*/
+/* Begin of Sub MENU */
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 150px;
+  background-color: #e2e2e2;
+  z-index: -1;
+  transform: translate(0, -200%);
+  transition: transform 0.5s ease; }
+
+.sub-menu a {
+  display: block; }
+
+/*====================*/
+/* This styles for fullscreen width sub-menu items */
+/* .sub-menu {
+			max-height: 0;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			min-width: 150px;
+			background-color: #e2e2e2;
+			z-index: -1;
+			transition: max-height 0.5s linear;
+			overflow: hidden;
+		} */
+/* This styles for fullscreen width sub-menu items */
+/*====================*/
+/* End of Sub MENU */
+/*====================*/
 @media only screen and (max-width: 1750px) {
   /* Begining of INDEX Page */
   /* Ending of INDEX Page */ }
