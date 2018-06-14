@@ -137,54 +137,6 @@ i {
 .icon-instagram:before {
   content: "\e904"; }
 
-@keyframes rotate_flip_front {
-  0% {
-    transform: rotateX(0deg) translateZ(10px); }
-  10% {
-    transform: rotateX(-180deg) translateZ(10px); }
-  50% {
-    transform: rotateX(-180deg) translateZ(10px); }
-  60% {
-    transform: rotateX(0deg) translateZ(10px); }
-  100% {
-    transform: rotateX(0deg) translateZ(10px); } }
-
-@keyframes rotate_flip_back {
-  0% {
-    transform: rotateX(180deg) translateZ(10px); }
-  10% {
-    transform: rotateX(0deg) translateZ(10px); }
-  50% {
-    transform: rotateX(0deg) translateZ(10px); }
-  60% {
-    transform: rotateX(180deg) translateZ(10px); }
-  100% {
-    transform: rotateX(180deg) translateZ(10px); } }
-
-body {
-  font-family: 'roboto-regular';
-  font-size: 100%;
-  box-sizing: border-box;
-  /* overflow: hidden; */ }
-
-.body-wrap {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
-  z-index: 10; }
-
-#fullpage {
-  height: auto !important; }
-
-.main {
-  flex-grow: 1;
-  min-height: 100vh;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center; }
-
 /* Begining of buttons */
 /* Eending of buttons */
 /* begining of INPUTS */
@@ -304,6 +256,56 @@ textarea:focus:-ms-input-placeholder {
   float: left; }
 
 /* WP Styles*/
+@keyframes rotate_flip_front {
+  0% {
+    transform: rotateX(0deg) translateZ(10px); }
+  10% {
+    transform: rotateX(-180deg) translateZ(10px); }
+  50% {
+    transform: rotateX(-180deg) translateZ(10px); }
+  60% {
+    transform: rotateX(0deg) translateZ(10px); }
+  100% {
+    transform: rotateX(0deg) translateZ(10px); } }
+
+@keyframes rotate_flip_back {
+  0% {
+    transform: rotateX(180deg) translateZ(10px); }
+  10% {
+    transform: rotateX(0deg) translateZ(10px); }
+  50% {
+    transform: rotateX(0deg) translateZ(10px); }
+  60% {
+    transform: rotateX(180deg) translateZ(10px); }
+  100% {
+    transform: rotateX(180deg) translateZ(10px); } }
+
+body {
+  font-family: 'roboto-regular';
+  font-size: 100%;
+  box-sizing: border-box;
+  /* overflow: hidden; */ }
+
+.body-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  z-index: 10; }
+
+.header {
+  /* flex-grow: 1; */ }
+
+.main {
+  /* flex-grow: 1; */
+  display: inline-flex;
+  flex-direction: column; }
+
+.footer {
+  max-height: 200px;
+  flex-grow: 1; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.6.0
@@ -2901,6 +2903,152 @@ textarea:focus:-ms-input-placeholder {
   /* Begining of INDEX Page */
   /* Ending of INDEX Page */ }
 
+@media only screen and (max-width: 1750px) {
+  /* Begining of INDEX Page */
+  /* Ending of INDEX Page */ }
+
+@media only screen and (max-width: 1700px) {
+  /* Begining of INDEX Page */
+  /* Ending of INDEX Page */ }
+
+@media only screen and (max-width: 1620px) {
+  /* Begining of INDEX Page */
+  /* Ending of INDEX Page */ }
+
+@media only screen and (max-width: 1500px) {
+  /* Begining of INDEX Page */
+  /* Ending of INDEX Page */ }
+
+@media only screen and (max-width: 1360px) {
+  /* Begining of INDEX Page */
+  /* Ending of INDEX Page */ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  /* Begining of INDEX Page */
+  /* Ending of INDEX Page */ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  /* Begining of INDEX Page */ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  /* Begining of INDEX Page */ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+  /* Begining of INDEX Page */ }
+
+@media only screen and (max-width: 520px) {
+  /* Begginning of Section About */ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 480px) {
+  /* Ending of INDEX Page */ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px) {
+  /* Beginning of INDEX Page */ }
+
+@media only screen and (max-width: 360px) {
+  /* Beginning of INDEX Page */ }
+
+@media only screen and (max-width: 320px) {
+  /* Begining of INDEX Page */
+  /* Ending of INDEX Page */ }
+
+@media only screen and (max-height: 700px) {
+  /* Begining of INDEX Page */ }
+
+/*====================*/
+/* Begin of Site Mine MENU */
+.site-nav {
+  padding: 0 10px; }
+
+.menu {
+  display: flex;
+  justify-content: space-between; }
+
+.menu-item {
+  position: relative;
+  z-index: 1; }
+
+.menu-item > a {
+  padding: 5px 20px;
+  background-color: #ededed;
+  display: block; }
+
+.menu-item:hover .sub-menu {
+  transform: translate(0, 0); }
+
+/*====================*/
+/* This styles for fullscreen width sub-menu items */
+/* .header {
+		position: relative;
+		z-index: 1;
+	}
+	.header-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: stratch;
+	}
+	.site-nav {
+		width: 50%;	
+	}
+	.menu {
+		height: 100%;
+	}
+	.menu-item {
+		position: static;
+		height: 100%;
+	}
+	.menu-item > a {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.menu-item:hover .sub-menu {
+		max-height: 200px;
+	} */
+/* This styles for fullscreen width sub-menu items */
+/*====================*/
+/* End of Site Mine MENU */
+/*====================*/
+/*====================*/
+/* Begin of Sub MENU */
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 150px;
+  background-color: #e2e2e2;
+  z-index: -1;
+  transform: translate(0, -200%);
+  transition: transform 0.5s ease; }
+
+.sub-menu a {
+  display: block; }
+
+/*====================*/
+/* This styles for fullscreen width sub-menu items */
+/* .sub-menu {
+			max-height: 0;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			min-width: 150px;
+			background-color: #e2e2e2;
+			z-index: -1;
+			transition: max-height 0.5s linear;
+			overflow: hidden;
+		} */
+/* This styles for fullscreen width sub-menu items */
+/*====================*/
+/* End of Sub MENU */
+/*====================*/
 @media only screen and (max-width: 1750px) {
   /* Begining of INDEX Page */
   /* Ending of INDEX Page */ }

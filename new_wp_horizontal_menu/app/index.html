@@ -10,7 +10,8 @@
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
 
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <!-- <link href="css/jquery.fullPage.css" rel="stylesheet">  
+    Delet This row If the Site have not FullPage Scrolling-->
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet"/>
@@ -22,7 +23,8 @@
   <body>
 
     <div class="body-wrap">
-
+      
+      <!-- Magnific PopUP Block Begin -->
       <div id="review-callback" class="white-popup mfp-hide mfp-fade">
         <div class="conatiner">
           <div class="row">
@@ -31,15 +33,208 @@
               
             </div><!--//.col -->
 
-            <div class="col-6 no-gutters">
-              
-            </div><!--//.col -->
-
           </div>
         </div>
       </div>
+      <!-- Magnific PopUP Block End -->
 
-      <header class="header"></header>
+      <header class="header">
+
+        <!-- NOTE: This HEADER Was Designed for small sub menu items.
+             The Structure for fullscreen width sub-menu items is at
+             the end of header ant it hasn't BOOTSTRAP classes!!!!!!  -->
+        
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+        
+            <div class="col-auto">
+              <div class="logo-block">
+                <div class="logo-img">
+                  <img src="images/logo.jpg" alt="logo-img">
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- NOTE: col Class has position reletive property  -->
+            
+            <div class="col-6">
+              <nav class="site-nav">
+                  
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="">Главная</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="">О нас</a>
+
+                      <ul class="sub-menu">
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                      </ul>
+
+                    </li>
+                    <li class="menu-item">
+                      <a href="">Услуги</a>
+
+                      <ul class="sub-menu">
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a href="">Lorem ipsum.</a>
+                        </li>
+                      </ul>
+
+                    </li>
+                    <li class="menu-item">
+                      <a href="">Галерея</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="">Контакты</a>
+                    </li>
+                  </ul>
+
+              </nav>
+            </div>
+
+            <div class="col-auto">
+              <div class="content-block">
+                <p class="address-block">Lorem ipsum.</p>
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <div class="content-block">
+                <p class="phnes-block">Lorem ipsum.</p>
+                <p class="phnes-block">Lorem ipsum.</p>
+                <p class="phnes-block">Lorem ipsum.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+
+
+      <!--
+      <div class="container">
+        <div class="header-wrap">
+
+          <div class="logo-block">
+            <div class="logo-img">
+              <img src="images/logo.jpg" alt="logo-img">
+            </div>
+          </div>
+
+          <nav class="site-nav">
+            
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="">Главная</a>
+              </li>
+              <li class="menu-item">
+                <a href="">О нас</a>
+
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                </ul>
+
+              </li>
+              <li class="menu-item">
+                <a href="">Услуги</a>
+
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="">Lorem ipsum.</a>
+                  </li>
+                </ul>
+
+              </li>
+              <li class="menu-item">
+                <a href="">Галерея</a>
+              </li>
+              <li class="menu-item">
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+
+          </nav>
+
+          <div class="content-block">
+            <div class="content-block">
+              <p class="address-block">Lorem ipsum.</p>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <div class="content-block">
+              <p class="phnes-block">Lorem ipsum.</p>
+              <p class="phnes-block">Lorem ipsum.</p>
+              <p class="phnes-block">Lorem ipsum.</p>
+            </div>
+          </div> 
+
+        </div>
+      </div>
+       -->
+
+
+      </header>
 
       <main class="main">
 
@@ -76,7 +271,8 @@
     </div><!--//.body-wrap -->
 
     <script src="js/jquery-1.12.4.min.js"></script>
-    <!-- <script src="js/jquery.fullPage.js"></script> -->
+    <!-- <script src="js/jquery.fullPage.js"></script> 
+    Delet This row If the Site have not FullPage Scrolling -->
     <script src="js/jquery.equalheights.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/owl.carousel.min.js"></script>

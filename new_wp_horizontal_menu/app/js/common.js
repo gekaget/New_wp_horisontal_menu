@@ -2,8 +2,8 @@
 $(document).ready(function () {
 
 
-    window.addEventListener('resize', reloadJsScripts);
-    window.addEventListener('load', checkUserHeightFirst);
+    /*window.addEventListener('resize', reloadJsScripts);
+    window.addEventListener('load', checkUserHeightFirst);*/
 
 
     var winWidth = 0;
@@ -12,41 +12,41 @@ $(document).ready(function () {
     getWinSize();
 
 
-    /*var indexPage = document.querySelector('.section.services');
-    var servicePage = document.querySelector('.section.service-page');
-    var blogOnePage = document.querySelector('.section.blog-page');
-    var galeryPage = document.querySelector('.section.galery-page');
-    var aboutPage = document.querySelector('.section.about-page');*/
+    var indexPage = '' || document.querySelector('.section.services');
+    var servicePage = '' || document.querySelector('.section.service-page');
+    var blogOnePage = '' || document.querySelector('.section.blog-page');
+    var galeryPage = '' || document.querySelector('.section.galery-page');
+    var aboutPage = '' || document.querySelector('.section.about-page');
 
     /* Begining Scripts for Index Page */
-    if (indexPage) {
+    if ( indexPage ) {
         
     }
     /* Ending Scripts for Index Page */
 
     /* Begining Scripts for servicePage Page */
-    if (servicePage) {
+    if ( servicePage ) {
 
     
     }
     /* Ending Scripts for servicePage Page */
 
     /* Begining Scripts for Blog One Page */
-    if (blogOnePage) {
+    if ( blogOnePage ) {
 
     }
     /* Ending Scripts for Blog One Page */
 
     /* Begining Scripts for Galery Page */
 
-    if (galeryPage) {
+    if ( galeryPage ) {
        
     }
     /* Ending Scripts for Galery Page */
 
 
 
-    if (aboutPage) {
+    if ( aboutPage ) {
         
     }
 
